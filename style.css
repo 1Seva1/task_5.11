@@ -9,12 +9,58 @@ header {
     justify-content: center;
     height: 400px;
     background-color: #d0d1d3;
-    background: url('https://cdn.pixabay.com/photo/2014/02/27/16/08/splashing-275950_960_720.jpg') bottom no-repeat;
+    background: url('https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_960_720.jpg') bottom no-repeat;
     background-size: cover;
 }
 
 h1 {
-    color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.news {
+    background-color: #ffff;
+    padding: 50px 0 32px;
+}
+
+.lablenew::after {
+    content: " New";
+    color: red;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #0888d9;
+}
+
+article h2 {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+article:nth-child(2n) {
+    background-color: rgb(177, 173, 173);
 }
 
 footer {
@@ -40,41 +86,4 @@ footer .links > a {
 .copyright {
     color: rgb(108, 117, 125);
     font-family: 'Times New Roman', Times, serif;
-}
-
-.news {
-    background-color: #ffff;
-    padding: 50px 0 32px;
-}
-
-article {
-    width: 768px;
-    margin: 0 auto 32px;
-    padding: 6px 15px;
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-article a {
-    color: rgb(33, 37, 41);
-    text-decoration: none;
-}
-
-article a:hover {
-    color: #0085a1;
-}
-
-article h2 {
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-}
-
-.article-meta {
-    color: rgb(134, 142, 150);
-    margin-bottom: 5px;
-}
-
-article img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
 }
